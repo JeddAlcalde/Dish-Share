@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dish Share</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <script src=""></script>
+    </head>
+    <body>
+        <div class="universal-header">
+            <!-- Header with logo and website title -->
+            <header class="site-header">
+                <div class="header-content">
+                    <h1>Dish Share</h1>
+                    <p>Your go-to platform for discovering, sharing, and saving delicious recipes.</p>
+                </div>
+                <img src="../images/DishShareLogo.png" alt="Dish Share Logo" class="logo">
+            </header>
+            <div class="topnav">
+                <a class="active" href="../index.html">Home Page</a>
+                <a href="browse.html">Browse</a>
+                <a href="saved.html">My Saved Recipes</a>
+                <a href="account.html">Login / Sign Up</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+
+        <!-- Search Bar for Recipes -->
+        <div class="search-section">
+            <input type="text" id="recipe-search" placeholder="Search for a recipe..." class="search-bar">
+            <button type="button" class="search-btn">Search</button>
+        </div>
+
+        <!-- Recipes Grid -->
+        <div class="recipe-grid">
+            <!-- Recipe Card Template (repeat this block for each recipe) -->
+            <div class="recipe-card">
+                <img src="recipe1.jpg" alt="Recipe 1" class="recipe-img">
+                <h3 class="recipe-title">Spaghetti Carbonara</h3>
+                <p class="recipe-creator">By: John Doe</p>
+                <button class="save-btn">Save Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe2.jpg" alt="Recipe 2" class="recipe-img">
+                <h3 class="recipe-title">Vegetarian Tacos</h3>
+                <p class="recipe-creator">By: Alice Smith</p>
+                <button class="save-btn">Save Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe3.jpg" alt="Recipe 3" class="recipe-img">
+                <h3 class="recipe-title">Grilled Chicken Salad</h3>
+                <p class="recipe-creator">By: Bob Johnson</p>
+                <button class="save-btn">Save Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe4.jpg" alt="Recipe 4" class="recipe-img">
+                <h3 class="recipe-title">Lemon Garlic Shrimp</h3>
+                <p class="recipe-creator">By: Charlie Lee</p>
+                <button class="save-btn">Save Recipe</button>
+            </div>
+            <!-- Add more recipes as needed -->
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Dish Share Project for CS 146 - Intro to Web Programming</p>
+        </footer>
+    </body>
+</html>
+    

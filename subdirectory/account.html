@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dish Share</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <script src=""></script>
+    </head>
+    <body>
+        <div class="universal-header">
+            <!-- Header with logo and website title -->
+            <header class="site-header">
+                <div class="header-content">
+                    <h1>Dish Share</h1>
+                    <p>Your go-to platform for discovering, sharing, and saving delicious recipes.</p>
+                </div>
+                <img src="../images/DishShareLogo.png" alt="Dish Share Logo" class="logo">
+            </header>
+            <div class="topnav">
+                <a class="active" href="../index.html">Home Page</a>
+                <a href="browse.html">Browse</a>
+                <a href="saved.html">My Saved Recipes</a>
+                <a href="account.html">Login / Sign Up</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+        </div>
+
+                    <!-- Login Form -->
+                    <div class="form-container">
+                        <form action="#login" method="post" class="form">
+                            <h3>Login</h3>
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" name="login-email" required placeholder="Enter your email">
+                            
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="login-password" required placeholder="Enter your password">
+                            
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                    </div>
+        
+                    <!-- Sign Up Form -->
+                    <div class="form-container">
+                        <form action="#signup" method="post" class="form">
+                            <h3>Create New Account</h3>
+                            <label for="signup-email">Email:</label>
+                            <input type="email" id="signup-email" name="signup-email" required placeholder="Enter your email">
+                            
+                            <label for="signup-password">Password:</label>
+                            <input type="password" id="signup-password" name="signup-password" required placeholder="Create a password">
+                            
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                            
+                            <button type="submit" class="submit-btn">Sign Up</button>
+                        </form>
+                    </div>
+        
+                    <p class="redirect">Already have an account? <a href="#login">Login here</a>.</p>
+                </div>
+
+        <footer>
+            <p>&copy; 2024 Dish Share Project for CS 146 - Intro to Web Programming</p>
+        </footer>
+    </body>

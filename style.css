@@ -105,6 +105,7 @@ header p {
 
 /* Styling for the About Us page */
 .about-section {
+    justify-content:center;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
@@ -139,6 +140,43 @@ header p {
     font-size: 1.2rem;
     color: #444;
     margin: 10px 0;
+}
+
+/* Styling for the Team Section */
+.team-section {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Vertically aligns the text and image */
+    margin-top: 30px;
+    gap: 100px; /* Small gap between text and image */
+    max-width: 100%; /* Makes the container take the full width of its parent */
+}
+
+.team-info {
+    flex: 1; /* Prevents the text from stretching */
+    text-align: left; /* Keeps the text aligned to the left */
+    margin-right: 5px; /* Small margin to prevent the text from being too squished */
+    max-width: 400px; /* Sets a max width for the text container */
+}
+
+.team-info h3 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 5px; /* Less space below the heading */
+}
+
+.team-image {
+    max-width: 550px; /* Limits the width of the image */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Vertically centers the image inside the container */
+}
+
+.team-photo {
+    width: 100%; /* Makes the image fill its container */
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the image */
 }
 
 /* Styling for the Login and Sign Up page */

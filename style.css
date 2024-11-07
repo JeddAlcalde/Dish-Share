@@ -354,6 +354,11 @@ header p {
     border-color: #388e3c; /* Darker green border */
 }
 
+.meal-tag {
+    background-color: #4ca7af; /* Green for culture tags */
+    border-color: #38748e; /* Darker green border */
+}
+
 /* Styling for the Save Recipe Button */
 .save-btn {
     padding: 10px 15px;

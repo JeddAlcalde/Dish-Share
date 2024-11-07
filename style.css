@@ -252,6 +252,39 @@ header p {
     cursor: pointer;
 }
 
+/* Styling for the Dropdown Filters */
+.filters {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.filters label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.filters .dropdown {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    width: 200px;
+}
+
+/* Hover effect for dropdowns */
+.filters .dropdown:hover {
+    border-color: #04AA6D;
+}
+
 .search-btn:hover {
     background-color: #039c56;
 }
@@ -291,6 +324,34 @@ header p {
     font-size: 1rem;
     color: #666;
     font-style: italic;
+}
+
+/* Styling for the Recipe Tags */
+.recipe-tags {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Centers the tags horizontally */
+    gap: 10px; /* Adds space between tags */
+}
+
+.tag {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 20px; /* Makes the tags look rounded */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Text color */
+    border: 1px solid #ccc; /* Subtle border */
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+}
+
+.protein-tag {
+    background-color: #ffeb3b; /* Yellow for protein tags */
+    border-color: #ffcc00; /* Darker yellow border */
+}
+
+.culture-tag {
+    background-color: #4caf50; /* Green for culture tags */
+    border-color: #388e3c; /* Darker green border */
 }
 
 /* Styling for the Save Recipe Button */

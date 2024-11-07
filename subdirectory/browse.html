@@ -30,6 +30,29 @@
         <div class="search-section">
             <input type="text" id="recipe-search" placeholder="Search for a recipe..." class="search-bar">
             <button type="button" class="search-btn">Search</button>
+
+            <!-- Dropdowns for filtering recipes -->
+            <div class="filters">
+                <label for="protein-tag">Protein:</label>
+                <select id="protein-tag" class="dropdown">
+                    <option value="">Select Protein</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="beef">Beef</option>
+                    <option value="fish">Fish</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="tofu">Tofu</option>
+                </select>
+
+                <label for="culture-tag">Culture:</label>
+                <select id="culture-tag" class="dropdown">
+                    <option value="">Select Culture</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="american">American</option>
+                    <option value="asian">Asian</option>
+                    <option value="mediterranean">Mediterranean</option>
+                </select>
+            </div>
         </div>
 
         <!-- Recipes Grid -->
@@ -39,24 +62,41 @@
                 <img src="../images/RecipeCards/SpaghettiCarbonara.jpg" alt="Recipe 1" class="recipe-img">
                 <h3 class="recipe-title">Spaghetti Carbonara</h3>
                 <p class="recipe-creator">By: John Doe</p>
+                <div class="recipe-tags">
+                    <span class="tag protein-tag">Pork</span>
+                    <span class="tag culture-tag">Italian</span>
+                </div>
                 <button class="save-btn">Save Recipe</button>
             </div>
             <div class="recipe-card">
                 <img src="../images/RecipeCards/VegetarianTacos.jpg" alt="Recipe 2" class="recipe-img">
                 <h3 class="recipe-title">Vegetarian Tacos</h3>
                 <p class="recipe-creator">By: Alice Smith</p>
+                <!-- Tags for Protein and Culture -->
+                <div class="recipe-tags">
+                    <span class="tag protein-tag">Vegetarian</span>
+                    <span class="tag culture-tag">Mexican</span>
+                </div>
                 <button class="save-btn">Save Recipe</button>
             </div>
             <div class="recipe-card">
                 <img src="../images/RecipeCards/GrilledChickenSalad.jpeg" alt="Recipe 3" class="recipe-img">
                 <h3 class="recipe-title">Grilled Chicken Salad</h3>
                 <p class="recipe-creator">By: Bob Johnson</p>
+                <div class="recipe-tags">
+                    <span class="tag protein-tag">Chicken</span>
+                    <span class="tag culture-tag">American</span>
+                </div>
                 <button class="save-btn">Save Recipe</button>
             </div>
             <div class="recipe-card">
                 <img src="../images/RecipeCards/LemonGarlicShrimp.jpg" alt="Recipe 4" class="recipe-img">
                 <h3 class="recipe-title">Lemon Garlic Shrimp</h3>
                 <p class="recipe-creator">By: Charlie Lee</p>
+                <div class="recipe-tags">
+                    <span class="tag protein-tag">Shellfish</span>
+                    <span class="tag culture-tag">Mediterranean</span>
+                </div>
                 <button class="save-btn">Save Recipe</button>
             </div>
             <!-- Add more recipes as needed -->

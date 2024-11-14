@@ -176,7 +176,7 @@ header p {
     width: 100%; /* Makes the image fill its container */
     height: auto;
     border-radius: 10px; /* Adds rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the image */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow around the image */
 }
 
 /* Styling for the Login and Sign Up page */

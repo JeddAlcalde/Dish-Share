@@ -5,7 +5,7 @@
         <title>Dish Share</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="../style.css">
-        <script src=""></script>
+        <script src="browse.js"></script>
     </head>
     <body>
         <div class="universal-header">
@@ -39,8 +39,8 @@
                     <option value="chicken">Chicken</option>
                     <option value="beef">Beef</option>
                     <option value="fish">Fish</option>
+                    <option value="pork">Pork</option>
                     <option value="vegetarian">Vegetarian</option>
-                    <option value="tofu">Tofu</option>
                 </select>
 
                 <label for="culture-tag">Culture:</label>
@@ -67,7 +67,7 @@
         <!-- Recipes Grid -->
         <div class="recipe-grid">
             <!-- Recipe Card Template (repeat this block for each recipe) -->
-            <div class="recipe-card">
+            <div class="recipe-card" data-protein="pork" data-culture="italian" data-meal="entree">
                 <img src="../images/RecipeCards/SpaghettiCarbonara.jpg" alt="Recipe 1" class="recipe-img">
                 <h3 class="recipe-title">Spaghetti Carbonara</h3>
                 <p class="recipe-creator">By: John Doe</p>
@@ -78,7 +78,7 @@
                 </div>
                 <button class="save-btn">Save Recipe</button>
             </div>
-            <div class="recipe-card">
+            <div class="recipe-card" data-protein="vegetarian" data-culture="mexican" data-meal="appetizer">
                 <img src="../images/RecipeCards/VegetarianTacos.jpg" alt="Recipe 2" class="recipe-img">
                 <h3 class="recipe-title">Vegetarian Tacos</h3>
                 <p class="recipe-creator">By: Alice Smith</p>
@@ -90,7 +90,7 @@
                 </div>
                 <button class="save-btn">Save Recipe</button>
             </div>
-            <div class="recipe-card">
+            <div class="recipe-card" data-protein="chicken" data-culture="american" data-meal="appetizer">
                 <img src="../images/RecipeCards/GrilledChickenSalad.jpeg" alt="Recipe 3" class="recipe-img">
                 <h3 class="recipe-title">Grilled Chicken Salad</h3>
                 <p class="recipe-creator">By: Bob Johnson</p>
@@ -101,7 +101,7 @@
                 </div>
                 <button class="save-btn">Save Recipe</button>
             </div>
-            <div class="recipe-card">
+            <div class="recipe-card" data-protein="shellfish" data-culture="mediterranean" data-meal="entree">
                 <img src="../images/RecipeCards/LemonGarlicShrimp.jpg" alt="Recipe 4" class="recipe-img">
                 <h3 class="recipe-title">Lemon Garlic Shrimp</h3>
                 <p class="recipe-creator">By: Charlie Lee</p>
@@ -118,7 +118,6 @@
         <footer>
             <p>&copy; 2024 Dish Share Project for CS 146 - Intro to Web Programming</p>
         </footer>
-        <script src="../script.js"></script>
     </body>
 </html>
     

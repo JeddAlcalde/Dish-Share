@@ -484,3 +484,7 @@ header p {
 .recipe-form button.submit-btn:hover {
     background-color: #039c56;
 }
+
+.hidden {
+    display: none !important
+}

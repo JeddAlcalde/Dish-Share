@@ -62,10 +62,11 @@
                     <option value="snack">Snack</option>
                 </select>
             </div>
+                
         </div>
 
         <!-- Recipes Grid -->
-        <div class="recipe-grid">
+        <div id = "recipe-grid" class="recipe-grid">
             <!-- Recipe Card Template (repeat this block for each recipe) -->
             <div class="recipe-card" data-protein="pork" data-culture="italian" data-meal="entree">
                 <img src="../images/RecipeCards/SpaghettiCarbonara.jpg" alt="Recipe 1" class="recipe-img">
@@ -114,7 +115,35 @@
             </div>
             <!-- Add more recipes as needed -->
         </div>
+        <section class="share-recipe">
+            <h2>Share Your Recipe</h2>
+            <form id = "share-recipe" class="recipe-form">
 
+                <label for="creator-name">Creator Name:</label>
+                <input type="text" id="creator-name" name="creator-name" placeholder="Enter the Creator's name" required>
+                
+
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" placeholder="Enter the recipe name" required>
+                
+                <label for="recipe-description">Description:</label>
+                <textarea id="recipe-description" name="recipe-description" placeholder="Briefly describe your recipe" rows="4" required></textarea>
+                
+                <label for="recipe-photo">Upload Photo:</label>
+                <input type="text" id="recipe-photo" name="recipe-photo" placeholder="Image URL" required>
+                
+                <label for="protein-tags">Protein (e.g., Beef, Pork):</label>
+                <input type="text" id="recipe-tags" name="recipe-tags" placeholder="Enter Protein" required>
+
+                <label for="culture-tags">Culture (e.g., American, Italian):</label>
+                <input type="text" id="recipe-tags" name="recipe-tags" placeholder="Enter Culture" required>
+
+                <label for="meal-tags">Meal (e.g., Entree, Dessert):</label>
+                <input type="text" id="recipe-tags" name="recipe-tags" placeholder="Enter Meal Type" required>
+                
+                <button type="submit" class="submit-btn">Submit Recipe</button>
+            </form>
+        </section>
         <footer>
             <p>&copy; 2024 Dish Share Project for CS 146 - Intro to Web Programming</p>
         </footer>
